@@ -1,0 +1,153 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height));
+  border-right: 1px solid var(--border);
+  /* background: var(--bg-secondary); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.controlsSection {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  flex: 0 1 auto;
+  max-height: 45%;
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controlGroup label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  appearance: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: var(--accent);
+}
+
+.selectIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.uploadZone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.uploadZone:hover {
+  border-color: var(--accent-glow);
+  color: var(--text-primary);
+}
+
+.uploadIcon {
+  color: var(--text-muted);
+}
+
+.scanBtn {
+  margin-top: 8px;
+}
+
+.paramsBox {
+  margin-top: auto;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.paramTitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.paramRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* Chat Section */
+.chatSection {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+
+.chatHeader {
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+  }
+
+  .controlsSection {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .paramsBox {
+    margin-top: 16px;
+  }
+
+  .chatSection {
+    height: 400px;
+    /* Constrain height so it scrolls instead of expanding */
+    max-height: 60vh;
+    border-top: 1px solid var(--border);
+  }
+}
