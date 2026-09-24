@@ -1,0 +1,83 @@
+{
+  "status": "success",
+  "scan_id": "scan_mumbai_20260410_191845",
+  "city": "mumbai",
+  "timestamp": "2026-04-10T13:48:45.505704",
+  "model_info": {
+    "name": "Siamese-SNN v3",
+    "f1_score": 0.4187,
+    "parameters": 7763362,
+    "inference_time_seconds": 17.1,
+    "throughput_patches_per_hour": 5067
+  },
+  "coordinates": {
+    "center": [
+      19.076,
+      72.8777
+    ],
+    "bounds": [
+      [
+        19.05,
+        72.85
+      ],
+      [
+        19.1,
+        72.9
+      ]
+    ],
+    "crs": "EPSG:4326"
+  },
+  "classification": {
+    "total_changed_pixels": 1864,
+    "total_changed_area_m2": 186400.0,
+    "findings": [
+      {
+        "class_id": 1,
+        "class_name": "Construction / Urban Sprawl",
+        "pixel_count": 749,
+        "area_m2": 74900.0,
+        "area_hectares": 7.49,
+        "severity": "high",
+        "percentage": 40.2
+      },
+      {
+        "class_id": 2,
+        "class_name": "Vegetation Clearance / Deforestation",
+        "pixel_count": 58,
+        "area_m2": 5800.0,
+        "area_hectares": 0.58,
+        "severity": "medium",
+        "percentage": 3.1
+      },
+      {
+        "class_id": 3,
+        "class_name": "Water Body Change / Sand Mining",
+        "pixel_count": 979,
+        "area_m2": 97900.0,
+        "area_hectares": 9.79,
+        "severity": "high",
+        "percentage": 52.5
+      },
+      {
+        "class_id": 4,
+        "class_name": "Other Land Alteration",
+        "pixel_count": 78,
+        "area_m2": 7800.0,
+        "area_hectares": 0.78,
+        "severity": "low",
+        "percentage": 4.2
+      }
+    ]
+  },
+  "blockchain": {
+    "hash": "0x78e850d8e2e55235d8230e9e45279aa071a518198809f408d7c9a5b18ff2b395",
+    "timestamp": "2026-04-10T13:48:45.505704",
+    "verified": true
+  },
+  "images": {
+    "before_rgb": "/api/static/scans/scan_mumbai_20260410_191845/before_rgb.png",
+    "after_rgb": "/api/static/scans/scan_mumbai_20260410_191845/after_rgb.png",
+    "change_mask": "/api/static/scans/scan_mumbai_20260410_191845/change_mask.png",
+    "classification_overlay": "/api/static/scans/scan_mumbai_20260410_191845/class_overlay.png"
+  }
+}
