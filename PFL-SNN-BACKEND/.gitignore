@@ -29,3 +29,9 @@ data/
 
 # Project specific
 *.sqlite3
+
+# Large output files (not needed for deployment)
+outputs/models/*.pt
+outputs/demo/
+outputs/scans/
+*.pt

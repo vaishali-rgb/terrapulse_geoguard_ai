@@ -1,0 +1,57 @@
+# Core ML (CPU-only for Render deployment)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+snntorch>=0.9
+numpy
+scipy
+
+# Geospatial
+rasterio
+shapely
+geopandas
+pyproj
+sentinelhub
+s2cloudless
+
+# Database
+psycopg2-binary
+sqlalchemy
+geoalchemy2
+supabase>=2.0
+
+# API
+fastapi
+uvicorn[standard]
+websockets
+python-dotenv
+requests>=2.31
+
+# Reporting
+reportlab
+Pillow
+matplotlib
+fpdf2>=2.7
+
+# ===== CHATBOT & RAG =====
+langchain>=0.3
+langchain-groq>=0.2
+langchain-community>=0.3
+langchain-openai>=0.2
+langgraph>=0.2
+sentence-transformers>=3.0
+
+# RAG / Vector Store
+chromadb>=0.5
+pypdf>=4.0
+tiktoken
+
+# ===== FOUNDATION MODEL =====
+timm>=1.0
+einops>=0.7
+
+# Utilities
+tqdm
+scikit-learn
+pydantic>=2.0
+python-multipart
